@@ -1,0 +1,60 @@
+# Core CrewAI and FastAPI dependencies
+crewai>=0.28.0
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# AI and LLM dependencies
+openai
+langchain-core
+langchain-community
+langchain-google-genai
+google-generativeai
+
+# Environment and configuration
+python-dotenv>=1.0.0
+
+# PDF processing
+pypdf>=3.17.0
+
+# Data processing
+pydantic>=2.0.0
+pydantic-core
+
+# Google Cloud libraries (for Gemini integration)
+google-ai-generativelanguage
+google-api-core
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-cloud-aiplatform
+google-cloud-bigquery
+google-cloud-core
+google-cloud-resource-manager
+google-cloud-storage
+
+# Other core dependencies
+click==8.1.7
+google-crc32c==1.5.0
+google-resumable-media==2.7.0
+googleapis-common-protos==1.63.0
+Jinja2==3.1.4
+jsonschema==4.22.0
+numpy==1.26.4
+oauthlib==3.2.2
+pandas==2.2.2
+pillow==10.3.0
+protobuf==4.25.3
+
+# Monitoring and observability
+opentelemetry-api
+opentelemetry-exporter-otlp-proto-common
+opentelemetry-exporter-otlp-proto-grpc
+opentelemetry-exporter-otlp-proto-http
+opentelemetry-instrumentation
+opentelemetry-instrumentation-asgi
+opentelemetry-instrumentation-fastapi
+opentelemetry-proto
+opentelemetry-sdk
+opentelemetry-semantic-conventions
+opentelemetry-util-http
