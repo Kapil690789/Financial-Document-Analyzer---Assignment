@@ -1,0 +1,20 @@
+# Core CrewAI and FastAPI
+crewai
+crewai-tools
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+
+# AI and LLM
+langchain-google-genai
+langchain-litellm
+pypdf
+duckduckgo-search
+
+# Database Integration (MongoDB)
+pymongo
+
+# Queue Worker (Celery with Redis)
+celery
+redis

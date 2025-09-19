@@ -1,18 +1,22 @@
 import os
 from dotenv import load_dotenv
-load_dotenv()
-
 from crewai import Agent
-from langchain_google_genai import ChatGoogleGenerativeAI
+
+# This is the new, recommended way to import ChatLiteLLM
+from langchain_litellm import ChatLiteLLM
+
 from tools import search_tool, financial_document_tool, investment_analysis_tool, risk_assessment_tool
 
-# Loading LLM with Google Gemini
-llm = ChatGoogleGenerativeAI(
-    model="gemini-pro",
-    verbose=True,
-    temperature=0.1,
-    google_api_key=os.getenv("GOOGLE_API_KEY")
+load_dotenv()
+
+# The library will now automatically find and use the GEMINI_API_KEY from your .env file.
+llm = ChatLiteLLM(
+    model="gemini/gemini-1.5-flash",
+    temperature=0.1
 )
+
+# --- All the agent definitions below this line remain exactly the same ---
+# (financial_analyst, verifier, investment_advisor, risk_assessor)
 
 # Creating an Experienced Financial Analyst agent
 financial_analyst = Agent(
